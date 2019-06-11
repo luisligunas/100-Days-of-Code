@@ -6,10 +6,11 @@ I still don't know how I'm going to format this repository, but I will be adjust
 
 That's all for now. Let's see what these next 100 days bring. *Onward and upward.*
 
+(P.S. Also check out Miguel Habana's adventure through his own #100DaysOfCode [here](https://github.com/mighabana/100-Days-of-Code).)
+
 ---
-#### Day 1
-*11 June 2019*
-*6:40 PM - 10:00 PM*
+### Day 1
+*11 June 2019, 6:40 PM - 10:00 PM*
 
 Since I haven't been doing much coding prior to this day, I deemed that it would be nice to get back into the rhythm of it all by solving a few of the easier problems on Codeforces. I looked at the problems that have been solved the most and decided to solve the ones that I haven't solved yet.
 
