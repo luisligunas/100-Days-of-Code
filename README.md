@@ -4,4 +4,6 @@ This repository serves as a way to document my process and progress as I undergo
 
 I still don't know how I'm going to format this repository, but I will be adjusting the file structure and all READMEs as I go. I plan to list down the relevant links (and perhaps personal journal entries) for each day. And I may also have links to other repositories as I go through this challenge.
 
+Daily entries may be viewed in the READMEs in their respective folders.
+
 That's all for now. Let's see what these next 100 days bring. *Onward and upward.*
