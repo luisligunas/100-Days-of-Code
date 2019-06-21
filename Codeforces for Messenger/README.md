@@ -14,11 +14,11 @@ Note that the steps which I indicate that do not have any additional details to 
 - Reset everything
     - I have tried to make this chatbot in the past, but I never really got through to continuing it. Given this, I already had a few things set up. So before doing anything else, I deleted the (1) Facebook page and the (2) Facebook app on Facebook for Developers that I previously created, just so I could start from a clean slate.
 - [Create Page](https://www.facebook.com/pages/create)
-    - I chose the **Community or Public Figure** option and filled it out as seen in the following image. ![Creating New Page](./readme-images/new-page)
-    - When I pressed **Continue**, however, there was a prompt that an error occurred. ![New Page Error](./readme-images/new-page-error)
-    - When I tried to do it again, there was a prompt that I already had a page with the same name. ![Change Page Name](./readme-images/new-page-change-name)
-    - I figured that the page was already created, so I went to [view my pages](https://www.facebook.com/bookmarks/pages) and, true enough, it was already there. When I clicked on the page, however, it brought me to a page saying that there was an error. So instead of clicking on the page name itself, I clicked on the gear (settings) button beside it. It opened up a pop-up and I scrolled down the **General** tab and clicked **See All Information**. ![Edit Details](./readme-images/new-page-edit-details)
-    - This successfully brought me to the page I just created. Not knowing if it was necessary or not, I also edited the page's username. ![Edit Username](./readme-images/new-page-edit-username)
+    - I chose the **Community or Public Figure** option and filled it out as seen in the following image. ![Creating New Page](readme-images/new-page)
+    - When I pressed **Continue**, however, there was a prompt that an error occurred. ![New Page Error](readme-images/new-page-error)
+    - When I tried to do it again, there was a prompt that I already had a page with the same name. ![Change Page Name](readme-images/new-page-change-name)
+    - I figured that the page was already created, so I went to [view my pages](https://www.facebook.com/bookmarks/pages) and, true enough, it was already there. When I clicked on the page, however, it brought me to a page saying that there was an error. So instead of clicking on the page name itself, I clicked on the gear (settings) button beside it. It opened up a pop-up and I scrolled down the **General** tab and clicked **See All Information**. ![Edit Details](readme-images/new-page-edit-details)
+    - This successfully brought me to the page I just created. Not knowing if it was necessary or not, I also edited the page's username. ![Edit Username](readme-images/new-page-edit-username)
 - Create Facebook App
     - Since I already had a Facebook Developer Account, I went straight to creating a Facebook App and it was very straightforward.
     - I also collected the PAGE_ID, APP_ID, PAGE_ACCESS_TOKEN, and APP_SECRET as indicated in the documentation.
