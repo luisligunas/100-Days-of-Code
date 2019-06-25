@@ -1,4 +1,3 @@
----
 ## Day 2
 *12 June 2019, 9:50 AM - 11:59 PM*
 
@@ -42,3 +41,90 @@ Note that the steps which I indicate that do not have any additional details to 
     - If it wasn't obvious, if your app is already running on Heroku there is no need to keep the terminals, in which you typed in the commands `ngrok http 3000` and `node app.js`, running.
 
 Learning how to set up all of these was great, but it's simply a step towards my goal. I plan to start learning how to use the Node.js framework in the coming days. Basically, I want to know how to connect to Messenger with a Node.js project that I code from scratch.
+
+---
+## Day 3, 4, and 5
+*22 June 2019, 6:00 PM - 11:59 PM*
+*23 June 2019, 6:00 PM - 11:59 PM*
+*24 June 2019, 6:00 PM - 10:00 PM*
+
+After setting up the sample Messenger app in day 2, I wanted to create my own webhook from scratch. Not knowing how to do that, I first checked out Facebook for Developers' [tutorial](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup) on how to set up webhooks, which had step-by-step instructions. The problem for me, however, was that I didn't understand any of the code at all. So I looked online for a beginner course on Node.js and I found [this video](https://www.youtube.com/watch?v=TlB_eWDSMt4) on YouTube. It had a lot of concepts that were standard programming or web development ideas, but I listed down some notes on topics that were new to me. I also watched [this video](https://www.youtube.com/watch?v=pKd0Rpw7O48), which was a sequel to the previous video and mainly tackled how to use Express, among other important topics in using Node.js.
+
+#### Notes
+Node.js
+-  a **runtime environment** for executing Javascript code
+    - **!!!** *neither a programming language nor a framework*
+- open-source
+- great for prototyping
+- scalable, because of its speed
+- asynchronous (non-blocking)
+- ideal for I/O-intensive applications
+- NOT ideal for CPU-intensive applications
+- In Javascript, all functions and variables defined globally can be accessed through `window`. The Node alternative of `window` is the keyword `global`. Functions and variables declared globally, however, cannot be accessed through the `global` keyword; only built-in functions (and variables?) may be accessed.
+- Every file in a Node.js app is considered a module.
+    - The following is the module wrapper function: `function(exports, require, module, __filename, __dirname)`
+    - The expressions `module.exports` and `exports` only differ in the sense that you can change the value of the former, but not the latter; doing so with the latter only changes its value locally in the module.
+    - It is ideal to declare modules as constants.
+
+Some Useful Tools
+- [JSHint](https://jshint.com/): detects errors and potential problems in Javascript code
+- [Express](https://expressjs.com/): framework for creating web apps and APIs using Node.js
+- [Nodemon](https://nodemon.io/): allows automatic restarting of Node.js application when a file has been edited
+- [Joi](https://www.npmjs.com/package/@hapi/joi): validates Javascript objects
+
+Some Useful Commands
+- `npm init --yes`: makes a package.json file
+- `npm install -g <package_name>`: installs a package globally
+- `set <key>=<value>` (Windows) or `export <key>=<value>` (Mac): defines `process.env` key-value pairs
+
+Some Code Snippets
+- Setting server ports and accessing environment variables
+```Javascript
+const port = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
+app.listen(port, () => {
+    console.log(`Listening on port ${port}...`);
+});
+```
+- Allowing direct reading of response bodies as JSON (I think)
+```Javascript
+app.use(express.json());
+```
+- Using Joi for object validation
+```Javascript
+const Joi = require('joi'); //Note: outdated version
+function validateObj(obj) {
+    const schema = {
+        name: Joi.string().min(3).required()
+    };
+    const { error } = Joi.validate(obj, schema);
+    if(error) return res.status(400).send(error.details[0].message);
+    else { //validated }
+}
+```
+- Responding to a GET request and how to access values in the request
+```Javascript
+app.get('/api/courses/:course_id', (req, res) => {
+    res.send(`Course ID is: ${req.params.course_id}.`);
+    //Access request body through: req.body
+    //Access query parameters through: req.query
+});
+```
+- Using EventEmitter
+```Javascript
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+emitter.on('trigger', (arg) => {
+    //Action when emitter.emit('trigger', ...) is called
+});
+emitter.emit('trigger', <some arguments>);
+```
+- Exporting values in modules
+```Javascript
+//require-ing this module would return a list of key-value pairs
+module.exports.key = value;
+//require-ing this module would return the value itself
+module.exports = value;
+```
+Looking back at the sample code that Facebook for Developers provided for setting up webhooks, I believe that the two videos I watched and studied were able to equip me with all the concepts, regarding Node.js, its libraries/frameworks, Javascript, and ES6, that I need to understand to modify the sample code for my own purposes.
