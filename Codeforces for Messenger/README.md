@@ -45,12 +45,14 @@ Learning how to set up all of these was great, but it's simply a step towards my
 ---
 ## Day 3, 4, and 5
 *22 June 2019, 6:00 PM - 11:59 PM*
+
 *23 June 2019, 6:00 PM - 11:59 PM*
+
 *24 June 2019, 6:00 PM - 10:00 PM*
 
 After setting up the sample Messenger app in day 2, I wanted to create my own webhook from scratch. Not knowing how to do that, I first checked out Facebook for Developers' [tutorial](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup) on how to set up webhooks, which had step-by-step instructions. The problem for me, however, was that I didn't understand any of the code at all. So I looked online for a beginner course on Node.js and I found [this video](https://www.youtube.com/watch?v=TlB_eWDSMt4) on YouTube. It had a lot of concepts that were standard programming or web development ideas, but I listed down some notes on topics that were new to me. I also watched [this video](https://www.youtube.com/watch?v=pKd0Rpw7O48), which was a sequel to the previous video and mainly tackled how to use Express, among other important topics in using Node.js.
 
-#### Notes
+### Notes
 Node.js
 -  a **runtime environment** for executing Javascript code
     - **!!!** *neither a programming language nor a framework*
