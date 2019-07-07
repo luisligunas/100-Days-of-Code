@@ -38,3 +38,60 @@ Looking back at the different measurements of dispersion, I found that the MD an
 > [...] I would add that the standard deviation isn't necessarily more accurate than the mean deviation, but gives a result that is "standardized" which means that it can be compared to the standard deviations of other datasets, regardless of their size or scale. For instance, the mean deviation of a question that has a range from 20,000 to 80,000 will be different than the mean deviation for a question that has a range from 0 to 10, making it difficult to compare those mean deviations. You'll learn a bit more about the wider implications of the characteristics of the standard deviation in Module 3 when we get into the concept of the normal distribution.
 
 That's all for now. On to moduele 3!
+
+---
+## Day 11
+*3 July 2019*
+
+Module 3 tackles the topic of **inferential statistics**. I don't fully understand what the term itself means, but doing a quick search, I figured out why I wasn't able to pick up the definition of inferential statistics while watching the videos. Apparently, inferential statistics is actually what I perceived the entirety of statistics to be. It's simply one of the two main branches of statistics that uses **random samples to represent a population**. Of course, it is possible that a sample does not reflect the characteristics of the entire population. Thus, inferential statistics also concerns itself with finding out what the chances are that an inference is correct or not. To simplify the analysis of data, there are some assumptions that must be made so that statistical tests can be used. One of these assumptions is how a variable is distributed in a population.
+
+A popular type of distribution is the normal distribution. Some of its properties are listed below.
+- The farther you get from the mean, the fewer the cases are.
+- The mean, median, and mode are all the same.
+- **One unit of SD** away from the mean covers **68%** of the population.
+- **Two units of SD** away from the mean covers **95%** of the population.
+- **Three units of SD** away from the mean covers **~99.7%** of the population.
+
+As mentioned previously, inferential statistics concerns itself with the probability of an inference being correct or incorrect. Thus, there is a **confidence level** used in inferential statistics, which indicates how tolerant we can be to error. Although it can be any confidence level, the value usually used is 0.05, indicating that it is alright to be incorrect 5% of the time.
+
+A **null hypothesis** is a claim that there is no relationship between two variables, rooting from the lack of a significant difference among different populations. Any observed difference is caused by sampling or experimental error. One consideration when doing analysis involving the null hypothesis is that the **standard deviation is needed**. Despite not being able to get the actual SD of the population, it can be estimated by getting the SD of the sample. Another consideration is that different relationships follow different types of distributions.
+
+Note: It is unnecessary to get the actual values of the entire population. Getting the values for a random sample is enough. The requirement to be able to get valid conclusions from the sample, however, is to show, with a certain level of certainty, that a relationship exists.
+
+#### Types of Error
+- Type 1 (False Positive)
+	- Claiming that a relationship exists when it actually does not
+- Type 2 (False Negative)
+	- Claiming that a relationship does not exist when it actually does
+- It is much riskier to make the type 1 error compared to the type 2 error.
+- The attempt to minimize either of these errors would likely result in an increase in the chances of making the other error type.
+
+Hypothesis testing is simply the use of statistics to determine the probability that a given hypothesis is true. The seven steps for hypothesis testing are listed below.
+
+#### Steps in Hypothesis Testing
+1. Make assumptions.
+	- The sample is representative of the population.
+		- The sample should have been randomly selected.
+	- The data collection method must be valid.
+		- The data that is obtained must be a valid measure of the variable used in the experiment.
+	- The statistical test used must be appropriate to the levels of measurement of the data.
+		- In fact, the levels of measurement of the data dictates the type of statistical test that must be used.
+2. State your hypothesis.
+	- The research hypothesis, as opposed to the null hypothesis, states that differences among groups is statistically significant, implying a relationship between variables.
+	- A one-tail test, as opposed to a two-tail test, can be used when there is a direction to the relationship being tested.
+		- One-tail: "The higher someone's educational attainment is, the more money they make on a monthly basis."
+		- Two-tail: "Educational attainment affects how much a person makes on a monthly basis."
+3. Choose the appropriate statistical test and significance level.
+	- As stated previously, the levels of measurement of the data dictates the type of statistical test that must be used.
+4. Calculate the test statistic.
+5. Compare the computed value to the critical value.
+	- Critical value: the threshold of statistical significance
+	- The critical values can be obtained from existing tables for different types of formulas and different levels of significance.
+6. Make a decision about the hypothesis.
+	- If the computed value is higher than the critical value, then the relationship of the variables is considered to be significant. Thus, we "fail to reject" the null hypothesis.
+	- In the case where the computed value is less than the critical value, then the null hypothesis must be rejected.
+7. Make substantive sense of the decision.
+	- The goal of this step is to move past the numbers and to be able to draw a conclusion that actually makes use of the results of the experiment.
+	- A lot of relationships can be statistically significant, but some discoveries may not be useful or have very minimal impact.
+
+The three main formulas used when testing significance are the Chi-square, T, and F (ANOVA) formulas. They were briefly discussed, but I will be talking more about them in the entries for the future modules.
