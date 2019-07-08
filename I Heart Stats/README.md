@@ -1,11 +1,11 @@
 ## Day 9
 *29 June 2019*
 
-Knowing that I was going to be out the whole day, I thought of a way to still continue doing 100 Days of Code without actually having to code anything. I remembered going to a data science talk and I asked the speaker what MOOCs would be nice entries into data science. He mentioned the course I Heart Stats. I looked it up and found out that its full name was [I "Heart" Stats: Learning to Love Statistics](https://www.edx.org/course/i-heart-stats-learning-to-love-statistics) and that it was offered by the University of Notre Dame.
+Knowing that I was going to be out the whole day, I thought of a way to continue doing 100 Days of Code without having to code anything. I remembered going to a data science talk and I asked the speaker what MOOCs nice entries into data science would be. He mentioned the course I Heart Stats. I looked it up and found out that its full name was [I "Heart" Stats: Learning to Love Statistics](https://www.edx.org/course/i-heart-stats-learning-to-love-statistics) and that it was offered by the University of Notre Dame.
 
 There were some videos at the start of the course that covered some math basics, but I watched them just in case there were concepts that I didn't know. All the topics turned out to be concepts that I already knew. There was also a video that talked about variables (independent, dependent).
 
-The first pieces of information that were actually new to me were the levels of information: nominal, ordinal, interval, and ratio. It was interesting to learn that there are some techniques that are exclusive to the higher levels of information. Also, techniques applicable to lower levels of information are applicable to the higher levels, but some information will be lost in doing so.
+The first pieces of information that were new to me were the levels of information: nominal, ordinal, interval, and ratio. It was interesting to learn that there are some techniques that are exclusive to the higher levels of information. Also, techniques applicable to lower levels of information are applicable to the higher levels, but some information will be lost in doing so.
 
 ---
 ## Day 10
@@ -15,7 +15,7 @@ I finished up the first module on variables and I wound up looking through some 
 
 I was also able to complete the second module, which was about the measures of central tendency and dispersion. The measures of central tendency, namely the mean, median, and mode, were not unfamiliar to me. What was unfamiliar to me, however, was that they worked on different levels of measurement. **The mean, median, and mode work on the interval, ordinal, and nominal levels, respectively.** *Note that these levels are the lowest levels that they can work on and that they may be applied to levels of measurement higher than those stated.* I was also reminded that the symbol, ![equation](https://latex.codecogs.com/svg.latex?\overline{X}), pronounced as x-bar, refers to the mean.
 
-The concept of dispersion refers to how spread out the data is. **The lower the measurements of dispersion is, the more accurate the measurements of central tendency are.** Also, the methods used to measure dispersion relies on the level of measurement of the data.
+The concept of dispersion refers to how spread out the data is. **The lower the measurements of dispersion are, the more accurate the measurements of central tendency are.** Also, the methods used to measure dispersion relies on the level of measurement of the data.
 
 Measurements of Dispersion
 - Range
@@ -37,13 +37,13 @@ Measurements of Dispersion
 Looking back at the different measurements of dispersion, I found that the MD and the SD were very similar. I scanned the forums for the second module and I found that some people had the same question. I ended up finding two reasons why the SD is preferred over the MD. The first can be found in this [link](https://www.mathsisfun.com/data/standard-deviation.html) in the footnotes entitled *Why square the differences?* It gives two examples that produced the same MD (but different SD) despite one of them having values which were obviously more spread out than the other. The second reason is a clarification made by Sarah, one of the lecturers in the course. It is as follows.
 > [...] I would add that the standard deviation isn't necessarily more accurate than the mean deviation, but gives a result that is "standardized" which means that it can be compared to the standard deviations of other datasets, regardless of their size or scale. For instance, the mean deviation of a question that has a range from 20,000 to 80,000 will be different than the mean deviation for a question that has a range from 0 to 10, making it difficult to compare those mean deviations. You'll learn a bit more about the wider implications of the characteristics of the standard deviation in Module 3 when we get into the concept of the normal distribution.
 
-That's all for now. On to moduele 3!
+That's all for now. On to module 3!
 
 ---
 ## Day 11
 *3 July 2019*
 
-Module 3 tackles the topic of **inferential statistics**. I don't fully understand what the term itself means, but doing a quick search, I figured out why I wasn't able to pick up the definition of inferential statistics while watching the videos. Apparently, inferential statistics is actually what I perceived the entirety of statistics to be. It's simply one of the two main branches of statistics that uses **random samples to represent a population**. Of course, it is possible that a sample does not reflect the characteristics of the entire population. Thus, inferential statistics also concerns itself with finding out what the chances are that an inference is correct or not. To simplify the analysis of data, there are some assumptions that must be made so that statistical tests can be used. One of these assumptions is how a variable is distributed in a population.
+Module 3 tackles the topic of **inferential statistics**. I don't fully understand what the term itself means, but doing a quick search, I figured out why I wasn't able to pick up the definition of inferential statistics while watching the videos. Apparently, inferential statistics is what I perceived the entirety of statistics to be. It's simply one of the two main branches of statistics that uses **random samples to represent a population**. Of course, it is possible that a sample does not reflect the characteristics of the entire population. Thus, inferential statistics also concerns itself with finding out what the chances are that an inference is correct or not. To simplify the analysis of data, there are some assumptions that must be made so that statistical tests can be used. One of these assumptions is how a variable is distributed in a population.
 
 A popular type of distribution is the normal distribution. Some of its properties are listed below.
 - The farther you get from the mean, the fewer the cases are.
@@ -60,9 +60,9 @@ Note: It is unnecessary to get the actual values of the entire population. Getti
 
 #### Types of Error
 - Type 1 (False Positive)
-	- Claiming that a relationship exists when it actually does not
+	- Claiming that a relationship exists when it does not
 - Type 2 (False Negative)
-	- Claiming that a relationship does not exist when it actually does
+	- Claiming that a relationship does not exist when it does
 - It is much riskier to make the type 1 error compared to the type 2 error.
 - The attempt to minimize either of these errors would likely result in an increase in the chances of making the other error type.
 
@@ -91,7 +91,7 @@ Hypothesis testing is simply the use of statistics to determine the probability 
 	- If the computed value is higher than the critical value, then the relationship of the variables is considered to be significant. Thus, we "fail to reject" the null hypothesis.
 	- In the case where the computed value is less than the critical value, then the null hypothesis must be rejected.
 7. Make substantive sense of the decision.
-	- The goal of this step is to move past the numbers and to be able to draw a conclusion that actually makes use of the results of the experiment.
+	- The goal of this step is to move past the numbers and to be able to draw a conclusion that makes use of the results of the experiment.
 	- A lot of relationships can be statistically significant, but some discoveries may not be useful or have very minimal impact.
 
 The three main formulas used when testing significance are the Chi-square, T, and F (ANOVA) formulas. They were briefly discussed, but I will be talking more about them in the entries for the future modules.
