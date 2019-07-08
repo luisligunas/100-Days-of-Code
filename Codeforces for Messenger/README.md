@@ -1,7 +1,5 @@
 ## Day 2
-*12 June 2019, 9:50 AM - 11:59 PM*
-
-*(The timestamp implies that I worked for 14 hours straight, but in reality, around a third of the time was me doing other things in the middle of coding.)*
+*12 June 2019*
 
 For this day, I decided to start creating a Messenger chatbot for Codeforces. I haven't ironed out the details such as what features I want it to have, but I decided to just get into it to try to figure out how to make a basic chatbot on Messenger first.
 
@@ -43,12 +41,8 @@ Note that the steps which I indicate that do not have any additional details to 
 Learning how to set up all of these was great, but it's simply a step towards my goal. I plan to start learning how to use the Node.js framework in the coming days. Basically, I want to know how to connect to Messenger with a Node.js project that I code from scratch.
 
 ---
-## Day 3, 4, and 5
-*22 June 2019, 6:00 PM - 11:59 PM*
-
-*23 June 2019, 6:00 PM - 11:59 PM*
-
-*24 June 2019, 6:00 PM - 10:00 PM*
+## Days 3, 4, and 5
+*22-24 June 2019*
 
 After setting up the sample Messenger app in day 2, I wanted to create my own webhook from scratch. Not knowing how to do that, I first checked out Facebook for Developers' [tutorial](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup) on how to set up webhooks, which had step-by-step instructions. The problem for me, however, was that I didn't understand any of the code at all. So, I looked online for a beginner course on Node.js and I found [this video](https://www.youtube.com/watch?v=TlB_eWDSMt4) on YouTube. It had a lot of concepts that were standard programming or web development ideas, but I listed down some notes on topics that were new to me. I also watched [this video](https://www.youtube.com/watch?v=pKd0Rpw7O48), which was a sequel to the previous video and mainly tackled how to use Express, among other important topics in using Node.js.
 
@@ -132,7 +126,7 @@ module.exports = value;
 Looking back at the sample code that Facebook for Developers provided for setting up webhooks, I believe that the two videos I watched and studied were able to equip me with all the concepts, regarding Node.js, its libraries/frameworks, JavaScript, and ES6, that I need to understand to modify the sample code for my own purposes.
 
 ---
-## Day 6, 7, and 8
+## Days 6, 7, and 8
 *25-27 June 2019*
 
 Looking at Facebook for Developers' [tutorial](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup), I already had some idea one how to modify it for my purposes. I simply copy-pasted it and deployed it to a Heroku app.

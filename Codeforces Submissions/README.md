@@ -1,5 +1,5 @@
 ## Day 1
-*11 June 2019, 6:40 PM - 10:00 PM*
+*11 June 2019*
 
 Since I haven't been doing much coding prior to this day, I deemed that it would be nice to get back into the rhythm of it all by solving a few of the easier problems on Codeforces. I looked at the problems that have been solved the most and decided to solve the ones that I haven't solved yet.
 
