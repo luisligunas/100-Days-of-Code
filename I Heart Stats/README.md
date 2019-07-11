@@ -110,9 +110,9 @@ For days 13 and 14, I completed modules 4, 5, and 6. These modules were straight
 | When to Use | Any combination of **nominal** and **ordinal** | **Nominal** (IV) to **interval/ratio** (DV)<br>Exactly **two groups** in the IV | **Nominal** (IV) to **interval/ratio** (DV)<br>**Three or more groups** in the IV |
 
 [chi-square-formula]: https://latex.codecogs.com/svg.latex?%5Cchi%5E2%20%3D%20%5Csum%20%5Cfrac%7B%28O_i%20-%20E_i%29%5E2%7D%7BE_i%7D
-[t-formula]: https://latex.codecogs.com/gif.latex?t%20%3D%20%5Cfrac%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%7B%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%7D
+[t-formula]: https://latex.codecogs.com/svg.latex?t%20%3D%20%5Cfrac%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%7B%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%7D
 [f-formula]: https://latex.codecogs.com/svg.latex?F%20%3D%20%5Cfrac%7BMSB%7D%7BMSE%7D
-[t-denom-formula]: https://latex.codecogs.com/gif.latex?%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BN_1%28S_1%29%5E2&plus;N_2%28S_2%29%5E2%7D%7BN_1%20&plus;%20N_2%20-%202%7D%7D%20%5Csqrt%7B%5Cfrac%7BN_1%20&plus;%20N_2%7D%7BN_1N_2%7D%7D
+[t-denom-formula]: https://latex.codecogs.com/svg.latex?%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BN_1%28S_1%29%5E2&plus;N_2%28S_2%29%5E2%7D%7BN_1%20&plus;%20N_2%20-%202%7D%7D%20%5Csqrt%7B%5Cfrac%7BN_1%20&plus;%20N_2%7D%7BN_1N_2%7D%7D
 [msb-mse-formulae]: https://latex.codecogs.com/svg.latex?MSB%20%3D%20%5Cfrac%7BSSB%7D%7Bdf_B%7D%2C%20MSE%20%3D%20%5Cfrac%7BSSE%7D%7Bdf_E%7D
 [ssb-formula]: https://latex.codecogs.com/svg.latex?SSB%20%3D%20%5Csum%20N_k%20%28%5Coverline%7BX%7D_k%20-%20%5Coverline%7BX%7D%29%5E2
 [sst-formula]: https://latex.codecogs.com/svg.latex?SST%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN_k%7D%20%28X_%7Bi%2Cj%7D%20-%20%5Coverline%7BX%7D%29%5E2%20%3D%20SSB%20&plus;%20SSE
@@ -146,7 +146,7 @@ For days 13 and 14, I completed modules 4, 5, and 6. These modules were straight
 - Note: the **absolute value of the computed t value** should be used when comparing to the critical value.
 	- > "When we get a negative calculated t value, this means that the mean for group 2 is higher than the mean for group 2. This is an important piece of information for checking one's hypothesis. For instance, if you hypothesized that group 1 would have a significantly higher mean than group 2, and you find a significant negative t value, then you will fail to reject your null hypothesis, even though you found a significant result, because it's not the significant result that your research hypothesis predicted."
 - Variables
-	- ![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D) = estimation of the standard error of the mean
+	- ![equation](https://latex.codecogs.com/svg.latex?%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D) = estimation of the standard error of the mean
 
 #### F (ANOVA) Test
 - ANOVA = Analysis of Variance
@@ -159,14 +159,14 @@ For days 13 and 14, I completed modules 4, 5, and 6. These modules were straight
 - If computed F value is less than or equal to 1, then there is no significant difference among the groups.
 - Variables
 	- Note: the "errors" refer to variations within each group
-	- ![equation](https://latex.codecogs.com/gif.latex?MSB) = "Mean square between"
-	- ![equation](https://latex.codecogs.com/gif.latex?MSE) = "Mean square error"
+	- ![equation](https://latex.codecogs.com/svg.latex?MSB) = "Mean square between"
+	- ![equation](https://latex.codecogs.com/svg.latex?MSE) = "Mean square error"
 	- "Sum of squares"
 		- short for "sum of the squared deviations from the mean"
-		- ![equation](https://latex.codecogs.com/gif.latex?SST) = "sum of squares total"
-		- ![equation](https://latex.codecogs.com/gif.latex?SSB) = "sum of squares between"; between groups
-		- ![equation](https://latex.codecogs.com/gif.latex?SSE) = "sum of squares error"; within a group
-	- ![equation](https://latex.codecogs.com/gif.latex?df_b) = "degrees of freedom between"
-	- ![equation](https://latex.codecogs.com/gif.latex?df_e) = "degrees of freedom error"
+		- ![equation](https://latex.codecogs.com/svg.latex?SST) = "sum of squares total"
+		- ![equation](https://latex.codecogs.com/svg.latex?SSB) = "sum of squares between"; between groups
+		- ![equation](https://latex.codecogs.com/svg.latex?SSE) = "sum of squares error"; within a group
+	- ![equation](https://latex.codecogs.com/svg.latex?df_b) = "degrees of freedom between"
+	- ![equation](https://latex.codecogs.com/svg.latex?df_e) = "degrees of freedom error"
 
 I believe I was able to grasp the content for these three modules. I may not know all the underlying concepts behind these tests, but at the very least, I know how to use them. I'm really looking forward to getting into regression as it is still nothing more but a buzzword to me. Hopefully I will be able to understand it on a deep enough level such that it would be beneficial to me once I get into data science.
