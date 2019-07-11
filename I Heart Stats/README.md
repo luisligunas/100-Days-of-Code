@@ -95,3 +95,78 @@ Hypothesis testing is simply the use of statistics to determine the probability 
 	- A lot of relationships can be statistically significant, but some discoveries may not be useful or have very minimal impact.
 
 The three main formulas used when testing significance are the Chi-square, T, and F (ANOVA) formulas. They were briefly discussed, but I will be talking more about them in the entries for the future modules.
+
+---
+## Days 13 and 14
+*8,10 July 2019*
+
+For days 13 and 14, I completed modules 4, 5, and 6. These modules were straightforward and mostly tackled the differences in doing the fourth step of hypothesis testing for the Chi-square test, T-test, and the F (ANOVA) test.
+
+|  | Chi-square | T | F (ANOVA) |
+|-----------------------|:----------------------------------------------:|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
+| Formula | ![equation][chi-square-formula] | ![equation][t-formula] | ![equation][f-formula] |
+| Intermediate Formulae |  | ![equation][t-denom-formula] | ![equation][msb-mse-formulae]<br>![equation][ssb-formula]<br>![equation][sse-formula]<br>![equation][sst-formula] |
+| Degrees of Freedom | ![equation][df-chi-square] | ![equation][df-t] | ![equation][df-f-b]<br>![equation][df-f-e] |
+| When to Use | Any combination of **nominal** and **ordinal** | **Nominal** (IV) to **interval/ratio** (DV)<br>Exactly **two groups** in the IV | **Nominal** (IV) to **interval/ratio** (DV)<br>**Three or more groups** in the IV |
+
+[chi-square-formula]: https://latex.codecogs.com/svg.latex?%5Cchi%5E2%20%3D%20%5Csum%20%5Cfrac%7B%28O_i%20-%20E_i%29%5E2%7D%7BE_i%7D
+[t-formula]: https://latex.codecogs.com/gif.latex?t%20%3D%20%5Cfrac%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%7B%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%7D
+[f-formula]: https://latex.codecogs.com/svg.latex?F%20%3D%20%5Cfrac%7BMSB%7D%7BMSE%7D
+[t-denom-formula]: https://latex.codecogs.com/gif.latex?%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D%20%3D%20%5Csqrt%7B%5Cfrac%7BN_1%28S_1%29%5E2&plus;N_2%28S_2%29%5E2%7D%7BN_1%20&plus;%20N_2%20-%202%7D%7D%20%5Csqrt%7B%5Cfrac%7BN_1%20&plus;%20N_2%7D%7BN_1N_2%7D%7D
+[msb-mse-formulae]: https://latex.codecogs.com/svg.latex?MSB%20%3D%20%5Cfrac%7BSSB%7D%7Bdf_B%7D%2C%20MSE%20%3D%20%5Cfrac%7BSSE%7D%7Bdf_E%7D
+[ssb-formula]: https://latex.codecogs.com/svg.latex?SSB%20%3D%20%5Csum%20N_k%20%28%5Coverline%7BX%7D_k%20-%20%5Coverline%7BX%7D%29%5E2
+[sst-formula]: https://latex.codecogs.com/svg.latex?SST%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN_k%7D%20%28X_%7Bi%2Cj%7D%20-%20%5Coverline%7BX%7D%29%5E2%20%3D%20SSB%20&plus;%20SSE
+[sse-formula]: https://latex.codecogs.com/svg.latex?SSE%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20%5Csum_%7Bj%3D1%7D%5E%7BN_k%7D%20%28X_%7Bi%2Cj%7D%20-%20%5Coverline%7BX%7D_i%29%5E2
+[df-chi-square]: https://latex.codecogs.com/svg.latex?df%20%3D%20%28r-1%29%28c-1%29
+[df-t]: https://latex.codecogs.com/svg.latex?df%20%3D%20%28N_1%20-%201%29&plus;%20%28N_2%20-%201%29%20%3D%20N_1%20&plus;%20N_2%20-%202
+[df-f-b]: https://latex.codecogs.com/svg.latex?df_B%20%3D%20k%20-%201
+[df-f-e]: https://latex.codecogs.com/svg.latex?df_E%20%3D%20N%20-%20k
+
+#### Some Terminology
+- Degrees of Freedom
+	- (According to Google,) "the number of independent values or quantities which can be assigned to a statistical distribution"
+	- (According to the course,) "tells you how much room you have to have things different [...] before everything else is determined"
+	- (According to my naive understanding,) minimum number of pieces of information required to be able to acquire all the necessary pieces of information
+	- Note: **If a degree of freedom is not available in the lookup table, use the closest value higher than the computed degree of freedom.**
+- ![equation](https://latex.codecogs.com/svg.latex?H_0) = null hypothesis
+- ![equation](https://latex.codecogs.com/svg.latex?H_1) = research hypothesis
+
+#### Chi-square Test
+- This can be used for any combination of nominal and ordinal levels of measurement but is mainly used for testing nominal to nominal relationships.
+- The actual formula for calculating this statistic is more complicated than the one listed above, but people generally use the simpler formula.
+- (This test can be used for checking relationships for more than 2 variables, *but this is not tackled in the course.*)
+- Variables
+	- ![equation](https://latex.codecogs.com/svg.latex?O_i) = observed value
+	- ![equation](https://latex.codecogs.com/svg.latex?E_i) = expected value (based on probability)
+	- ![equation](https://latex.codecogs.com/svg.latex?r) = number of rows in the table
+	- ![equation](https://latex.codecogs.com/svg.latex?c) = number of columns in the table
+
+#### T-test
+- Determines if the differences are due to the random fluctuations in the sampling or if they're reflective of real differences in the population
+- Note: the **absolute value of the computed t value** should be used when comparing to the critical value.
+	- > "When we get a negative calculated t value, this means that the mean for group 2 is higher than the mean for group 2. This is an important piece of information for checking one's hypothesis. For instance, if you hypothesized that group 1 would have a significantly higher mean than group 2, and you find a significant negative t value, then you will fail to reject your null hypothesis, even though you found a significant result, because it's not the significant result that your research hypothesis predicted."
+- Variables
+	- ![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Csigma%7D_%7B%5Coverline%7BX%7D_1%20-%20%5Coverline%7BX%7D_2%7D) = estimation of the standard error of the mean
+
+#### F (ANOVA) Test
+- ANOVA = Analysis of Variance
+- A special case of regression
+- It is better to do ANOVA than to do multiple T-tests; you will end up losing power in the latter.
+- Aims to find out what is responsible for variance
+	- Types of variation in the data: between groups and within each group
+	- If there's a lot of variation within a group, we don't get information about what's causing the variation.
+	- If there's a lot of variation between groups, then the groups themselves may be the ones causing the variation.
+- If computed F value is less than or equal to 1, then there is no significant difference among the groups.
+- Variables
+	- Note: the "errors" refer to variations within each group
+	- ![equation](https://latex.codecogs.com/gif.latex?MSB) = "Mean square between"
+	- ![equation](https://latex.codecogs.com/gif.latex?MSE) = "Mean square error"
+	- "Sum of squares"
+		- short for "sum of the squared deviations from the mean"
+		- ![equation](https://latex.codecogs.com/gif.latex?SST) = "sum of squares total"
+		- ![equation](https://latex.codecogs.com/gif.latex?SSB) = "sum of squares between"; between groups
+		- ![equation](https://latex.codecogs.com/gif.latex?SSE) = "sum of squares error"; within a group
+	- ![equation](https://latex.codecogs.com/gif.latex?df_b) = "degrees of freedom between"
+	- ![equation](https://latex.codecogs.com/gif.latex?df_e) = "degrees of freedom error"
+
+I believe I was able to grasp the content for these three modules. I may not know all the underlying concepts behind these tests, but at the very least, I know how to use them. I'm really looking forward to getting into regression as it is still nothing more but a buzzword to me. Hopefully I will be able to understand it on a deep enough level such that it would be beneficial to me once I get into data science.
