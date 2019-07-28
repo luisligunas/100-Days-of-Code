@@ -170,3 +170,45 @@ For days 13 and 14, I completed modules 4, 5, and 6. These modules were straight
 	- ![equation](https://latex.codecogs.com/svg.latex?df_e) = "degrees of freedom error"
 
 I believe I was able to grasp the content for these three modules. I may not know all the underlying concepts behind these tests, but at the very least, I know how to use them. I'm really looking forward to getting into regression as it is still nothing more but a buzzword to me. Hopefully I will be able to understand it on a deep enough level such that it would be beneficial to me once I get into data science.
+
+---
+## Days 15, 16, and 17
+*22,23,28 July 2019*
+
+It took quite some time to complete, but I was finally able to get through module 7, which focuses on regression.
+
+#### Regression
+- An extension of ANOVA; also uses the t table
+- Is about finding the best fit line
+- The y-intercept simply indicates the value of the DV when the IV is 0.
+- This is used for any combination of **interval and ratio** levels of measurement.
+
+#### Some Terms
+- Ordinary Least Squares Regression (OLS)
+	- A type of regression where the sum of the squares of the **vertical distances** of the points from the best fit line is minimized
+- Residual
+	- Difference between the actual value and the theoretical or expected value
+- Correlation
+	- How close the data is to the best fit line
+
+#### Relevant Formuals
+- Best Fit Line
+	- ![equation](https://latex.codecogs.com/svg.latex?%5Chat%7By%7D%20%3D%20%5Calpha%20&plus;%20%5Cbeta%20x)
+	- This is equivalent to the slope-intercept formula.
+		- Alpha is the y-intercept.
+		- Beta is the slope of the line.
+- Beta
+	- ![equation](https://latex.codecogs.com/svg.latex?%5Cbeta%20%3D%20%5Cfrac%7BN%20%5Csum%7Bxy%7D%20-%20%5Csum%7Bx%7D%20%5Csum%7By%7D%7D%7BN%20%5Csum%20x%5E2%20-%20%28%5Csum%7Bx%7D%29%5E2%7D)
+	- Getting a positive slope implies a positive relationship between the two variables, and vice versa.
+- Alpha
+	- ![equation](https://latex.codecogs.com/svg.latex?%5Calpha%20%3D%20%5Coverline%7By%7D%20-%20%5Cbeta%20%5Coverline%7Bx%7D)
+	- Given beta, along with the means of the IV and the DV, alpha can now be computed.
+- Standard error estimate for beta
+	- ![equation](https://latex.codecogs.com/svg.latex?%5Csigma_%7B%5Cbeta%7D%20%3D%20%5Cfrac%7B%5Csqrt%7B%5Cfrac%7B%5Csum%20%28y%20-%20%5Chat%7By%7D%29%5E2%7D%7BN-2%7D%7D%7D%7B%5Csqrt%7B%5Csum%7B%28x-%5Coverline%7Bx%7D%29%5E2%7D%7D%7D)
+	- Note that the degrees of freedom is used in this equation.
+		- ![equation](https://latex.codecogs.com/svg.latex?df%20%3D%20N%20-%202)
+- T value
+	- ![equation](https://latex.codecogs.com/svg.latex?t%20%3D%20%5Cfrac%7B%5Cbeta%7D%7B%5Csigma_%7B%5Cbeta%7D%7D)
+	- Once the t value is obtained, you are then to compare it to the critical value found in the t table.
+
+Previously being able to complete around three modules in two days, it felt odd to take three days to complete one module. Of course, this is because I have started working, so finding time has become much more difficult. But I will take this as a challenge in disciplining myself and making most of the time that I do have. On to the last two modules!
